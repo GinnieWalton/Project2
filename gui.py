@@ -9,10 +9,7 @@ class CalculatorGUI:
         """
         Initializes the GUI elements for the calculator.
 
-        Args:
-            root (Tk): The root Tkinter window.
-            on_calculate (Callable[[str, List[float]], float]): Callback for performing calculations.
-        """
+
         self.root = root
         self.root.title("Calculator")
         self.root.geometry("400x300")

@@ -3,7 +3,7 @@ from tkinter import messagebox
 from typing import Optional
 import formulas
 
-class PhoneStyleCalculator:
+class Calculator:
     """Phone-style calculator implemented using Tkinter."""
 
     def __init__(self, root: tk.Tk):
@@ -14,7 +14,7 @@ class PhoneStyleCalculator:
             root (tk.Tk): The main Tkinter window.
         """
         self.root = root
-        self.root.title("Phone Style Calculator")
+        self.root.title("Calculator")
         self.root.geometry("400x500")
         self.root.resizable(False, False)
         self.root.config(bg="lightgray")
@@ -82,7 +82,7 @@ class PhoneStyleCalculator:
 def main():
     """Main function to run the calculator application."""
     root = tk.Tk()
-    PhoneStyleCalculator(root)
+    Calculator(root)
     root.mainloop()
 
 
